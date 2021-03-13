@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#010613</color>
+    <color name="colorPrimaryDark">#010613</color>
+    <color name="colorAccent">#fdbe3b</color>
+    <color name="app_background">#010613</color>
+    <color name="default_text_color">#FFFFFF</color>
+    <color name="text_grey">#D2D2D2</color>
+    <color name="potentially_hazardous">#FF8282</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorMediumGray" >#f3f3f3</color>
+    <color name="colorDarkerGray" >#D6D5D5</color>
+    <color name="colorPrice">#9C6C09</color>
+    <color name="colorBackgroundLayout">#312e37</color>
+    <color name="colorQuickActionsBackground">#23222a</color>
+</resources>
