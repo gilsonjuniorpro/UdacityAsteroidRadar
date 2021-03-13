@@ -3,6 +3,7 @@ package com.udacity.asteroidradar.api
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import com.udacity.asteroidradar.BuildConfig
 import com.udacity.asteroidradar.model.Apod
 import com.udacity.asteroidradar.model.Neo
 import com.udacity.asteroidradar.util.Constants
@@ -32,19 +33,19 @@ class NeoController {
         }
 
         fun getApodCall(date: String?): Call<Apod>? {
-            val call = getRetrofit()?.getApod(Constants.API_KEY, date)
+            val call = getRetrofit()?.getApod(BuildConfig.NASA_API_KEY, date)
 
             return call
         }
 
         fun getNeoFeedCall(startDate: String?, endDate: String?): Call<Neo>? {
-            val call = getRetrofit()?.getNeoFeedCall(Constants.API_KEY, startDate, endDate)
+            val call = getRetrofit()?.getNeoFeedCall(BuildConfig.NASA_API_KEY, startDate, endDate)
 
             return call
         }
 
         fun getNeoFeed(startDate: String?, endDate: String?): Call<Neo>? {
-            val neo = getRetrofit()?.getNeoFeed(Constants.API_KEY, startDate, endDate)
+            val neo = getRetrofit()?.getNeoFeed(BuildConfig.NASA_API_KEY, startDate, endDate)
 
             return neo
         }
